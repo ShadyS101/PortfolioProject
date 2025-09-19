@@ -6,8 +6,6 @@
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
-
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
 implement, but your component must fit within the constraints of our software
@@ -28,8 +26,6 @@ detailed feedback, which may help you decide which component to ultimately
 implement.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+My career goals are to eventually just get a job that pays well and it's something I really like. I would like to either be involved in the space or gaming industry, and have a better understand of frontend development and backend development combined. My personal hobbies involve usually reading, hanging out with friends, and watching shows. I am a pretty big fan of Star Wars and I did like Harry Potter for a while. My favorite books often involve fantasy and something that makes me think, so my favorite one is The Secret History by Donna Tartt.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -131,8 +115,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +182,97 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Spaceship Navigator
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    The purpose of this component is to represent the navigation system of a spaceship flying through hyperspace so the people on the ship can end up the right space.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void setPosition(double x, double y, double z)`: This sets the location to where the ship will go.
+    - `void setVelocity(double velocity)`: This sets how fast the ship will be going in hyperspace.
+    - `double getPosition()`: If the people on the ship need to know where they are, this will tell them.
+    - `boolean inHyperspace(double position)`: This can tell the people on the ship if they've exited hyperspace yet.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void changeCourse(double newX, double newY, double newZ)`: Changes the target to another location/planet.
+    - `double distanceToTarget(double tX, double tY, double tZ)`: Gives an update of how far away the people are from their target/planet.
+    - `void interceptTargetShip(double sTargetX, double sTargetY, double sTargetZ)`: If the people happen to encounter a hostile force, this adjusts location for a ship.
+    - `String checkArmoryStatus(Map <String, Integer> a)`: This will return a status report of how the ship's weapons are doing (the condition).
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+     Yes since the velocity and position can change for the ship.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+    Most are represented with doubles, integers, and Strings. However, I may be using Map.Pair or perhaps another data structure.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+
+    Yes some constants will probably be used for distance and velocity but I am not sure yet.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+
+    Yes I think so because for methods like changing position or speed, I can use the position and velocity kernel methods.
+
+- Component Design #2: Book Tracker
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+  The purpose of this component is collect whatever books the user has read and organize it for easier trackability. There are different categories that can be used for the organization.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void addBook(String title, String genre)`: This will add a book into the tracker.
+    - `String removeBook(String title)`: This can remove a book from the tracker if the user wants to.
+    - `String bookStatus(String title)`: This will return whether the user has read a book or not.
+    - `int size()`: This will return the length of how many books the user has read.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `Set<String> getBooksInGenre(String genre)`: This can return all the books of a specific genre.
+    - `void markRead(String title)`: This can update whether the user has finished a book or not.
+    - `boolean hasBook(String title)`: This will help the user check whether they have a book on the tracker or not.
+    - `Map<String, Integer> countBooksByAuthors()`: This can count how many books are connected with one author.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+
+    Yes, as the books can be removed or added to the tracker.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+
+    Yes, as I will probably be using Map.Pair and Set to store values for the book.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+
+    I am not really sure on this yet but maybe for genres.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+
+    The kernel methods could be used to implement secondary methods such as with filtering between read or unread and sorting genres.
+
+- Component Design #3: Gaming Inventory
+  - **Description**:
+    The purpose of this component is to help out a player with managing their inventory in an easier method and be able to track everything.
+  - **Kernel Methods**:
+    - `void addItem(String name, int quantity)`: This adds the item to the inventory for a specific quantity.
+    - `String removeItem(String name, int quantity)`: This removes the item from the inventory for a specific quantity.
+    - `int size()`: Returns the size of the inventory.
+    - `boolean hasItem(String name)`: This will check whether an item exists in an inventory or not.
+  - **Secondary Methods**:
+    - `void getInventory()`: This will get all the items in the inventory.
+    - `String useItem(String name)`: This will return the item to the user for use in the game.
+    - `void clearInventory()`: This will completely wipe down the inventory and make it empty.
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+
+    I am not sure on this but the quantity of the items could change.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+
+    It could possibly use a Map.Pair to store the item and quantity as a better database.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+
+    No I don't think so unless I have to use it for the quantities.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+
+    Yes, the secondary methods can be implemented with kernel methods like with using an item (useItem), you would need to check whether the item is there which is a kernel method (hasItem).
 
 ## Post-Assignment
 
@@ -269,8 +280,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -288,13 +297,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## [2025.09.19]
 
 ### Added
 
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a Spaceship Navigator component
+- Designed a Book Tracker component
+- Designed a Gaming Inventory component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -309,7 +318,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -319,11 +327,8 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -349,8 +354,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
