@@ -81,6 +81,17 @@ the following form: YYYY.0M.0D.
 - Designed a Book Tracker component
 - Designed a Gaming Inventory component
 
+## [2025.10.09]
+
+### Added
+
+- Designed a proof of concept for BookTracker component
+
+### Updated
+
+- Changed design to include all the kernel methods and most of the secondary
+methods to showcase proof of concept.
+
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
