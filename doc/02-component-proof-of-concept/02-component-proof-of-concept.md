@@ -142,8 +142,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
-
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
 Here's what I would expect to see at the minimum:
@@ -157,15 +155,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.10.09
 
 ### Added
 
-- Designed a proof of concept for <!-- insert name of component here --> component
+- Designed a proof of concept for BookTracker component
 
 ### Updated
 
-- Changed design to include ...
+- Changed design to include all the kernel methods and most of the secondary
+methods to showcase proof of concept.
 
 ```
 
@@ -176,8 +175,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -199,8 +196,6 @@ recommend keeping the pull request open until at least a peer has had a chance
 to look over your changes. Otherwise, you defer needed changes to later pull
 requests, which could sacrifice the overall quality of your work or result in
 major rework.
-
-<!-- TODO: paste the URL to Carmen then delete this comment -->
 
 ### Peer Review
 
