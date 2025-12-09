@@ -8,6 +8,36 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.10.23]
+
+### Added
+
+- Designed kernel and enhanced interfaces for BookTracker component
+
+### Updated
+
+- Changed design to include interfaces for BookTracker and BookTrackerKernel
+- Changed file system to nest the interfaces under src then component then booktracker
+- Updated ChangeLog to right order
+
+## [2025.10.09]
+
+### Added
+
+- Designed a proof of concept for BookTracker component
+
+### Updated
+
+- Changed design to include all the kernel methods and most of the secondary methods to showcase proof of concept.
+
+## [2025.09.19]
+
+### Added
+
+- Designed a Spaceship Navigator component
+- Designed a Book Tracker component
+- Designed a Gaming Inventory component
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
