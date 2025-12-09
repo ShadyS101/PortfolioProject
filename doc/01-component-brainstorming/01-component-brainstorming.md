@@ -188,7 +188,7 @@ will likely refine your design to make your implementation easier to use.
   - **Kernel Methods**:
     - `void setPosition(double x, double y, double z)`: This sets the location to where the ship will go.
     - `void setVelocity(double velocity)`: This sets how fast the ship will be going in hyperspace.
-    - `double getPosition()`: If the people on the ship need to know where they are, this will tell them.
+    - `double getPosition()`: If the people on the ship need to know where they are, this will tell them. This method will take in the position of where they started from and whatever their final location, and using distancetotarget, it can compute where they are at right now. It will require some math probably.
     - `boolean inHyperspace(double position)`: This can tell the people on the ship if they've exited hyperspace yet.
   - **Secondary Methods**:
     - `void changeCourse(double newX, double newY, double newZ)`: Changes the target to another location/planet.
@@ -221,11 +221,14 @@ will likely refine your design to make your implementation easier to use.
     - `String removeBook(String title)`: This can remove a book from the tracker if the user wants to.
     - `String bookStatus(String title)`: This will return whether the user has read a book or not.
     - `int size()`: This will return the length of how many books the user has read.
+    - `boolean hasBook(String title)`: This will help the user check whether they have a book on the tracker or not.
+    - `hasGenre(String genre)`: This can check if there is any book with the specified genre.
+    - `hasAuthor(String author)`: This can check if there is any book with the specified author.
   - **Secondary Methods**:
     - `Set<String> getBooksInGenre(String genre)`: This can return all the books of a specific genre.
     - `void markRead(String title)`: This can update whether the user has finished a book or not.
-    - `boolean hasBook(String title)`: This will help the user check whether they have a book on the tracker or not.
     - `Map<String, Integer> countBooksByAuthors()`: This can count how many books are connected with one author.
+    - `void clear()`: This can clear out the whole tracker and be able to start with a fresh one.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
@@ -250,6 +253,7 @@ will likely refine your design to make your implementation easier to use.
   - **Kernel Methods**:
     - `void addItem(String name, int quantity)`: This adds the item to the inventory for a specific quantity.
     - `String removeItem(String name, int quantity)`: This removes the item from the inventory for a specific quantity.
+    - `boolean hasQuantity(int amount)`: This will check before removing something, that the amount being used actually exists in the inventory.
     - `int size()`: Returns the size of the inventory.
     - `boolean hasItem(String name)`: This will check whether an item exists in an inventory or not.
   - **Secondary Methods**:
