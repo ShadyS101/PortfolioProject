@@ -8,6 +8,42 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.10]
+
+### Added
+
+- Designed test suite for BookTracker component
+- Designed two different use cases for BookTracker component
+
+### Updated
+
+- Changed design to include test cases for JUnit
+- Changed design to include use cases in src
+- Updated part 6 in doc and added to reflection questions
+
+## [2025.12.01]
+
+### Added
+
+- Designed kernel implementation for BookTracker component
+
+### Updated
+
+- Changed ChangeLog to have new additions
+- Changed design to include the hasAuthor kernel method now
+
+# [2025.11.21]
+
+### Added
+
+- Designed abstract class for BookTracker component and created BookTrackerSecondary
+
+### Updated
+
+- Changed design to include hasAuthor as a kernel method
+- Edited Component Brainstorming for resubmission
+- Updated Changelog to have new additions
+
 ## [2025.10.23]
 
 ### Added

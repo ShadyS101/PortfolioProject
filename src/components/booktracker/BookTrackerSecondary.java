@@ -12,27 +12,6 @@ import components.set.Set1L;
  */
 public abstract class BookTrackerSecondary implements BookTracker {
 
-    /**
-     * Returns the internal map of books (title, genre).
-     *
-     * @return stores the names of the books in a map.
-     */
-    protected abstract Map<String, String> books();
-
-    /**
-     * Returns the internal map of status (title, read/unread).
-     *
-     * @return stores the status of whether something has been read or not.
-     */
-    protected abstract Map<String, Boolean> status();
-
-    /**
-     * Returns the internal map of status (title, author).
-     *
-     * @return stores the books' authors in a map.
-     */
-    protected abstract Map<String, Boolean> authors();
-
     /*
      * Secondary Methods
      */
