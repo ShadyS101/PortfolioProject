@@ -1,0 +1,44 @@
+package components.booktracker;
+
+import components.booktracker.BookTracker;
+import components.booktracker.BookTracker1L;
+
+/**
+ * First program using BookTracker as the main data structure for tracking user's books.
+ *
+ * @author Shaili Sinha
+ */
+public class BookTrackerDemo {
+
+    /**
+     * Private constructor.
+     */
+    private BookTrackerDemo() {
+    }
+
+    public static void main(String[] args) {
+        BookTracker bTrack = new BookTracker1L();
+
+        // Adds the books
+        bTrack.addBook("The Secret History", "Fiction", "Donna Tartt");
+        bTrack.addBook("Six of Crows", "Fantasy", "Leigh Bardugo");
+        bTrack.addBook("1984", "Dystopian", "George Orwell");
+
+        // Remove 1984
+        bTrack.removeBook("1984");
+
+        // Check and mark read status
+        System.out.println("Status of Six of Crows: " + bTrack.bookStatus("Six of Crows"));
+        bTrack.markRead("Six of Crows");
+        System.out.println("Status of Six of Crows after reading: " + bTrack.bookStatus("Six of Crows"));
+
+        // Check existence and size
+        System.out.println("Has 'The Secret History'? " + bTrack.hasBook("The Secret History"));
+        System.out.println("Has genre 'Fiction'? " + bTrack.hasGenre("Fiction"));
+        System.out.println("Has author 'Donna Tartt'? " + bTrack.hasAuthor("Donna Tartt"));
+        System.out.println("Total books: " + bTrack.size());
+
+        // Books in a genre
+        System.out.println("Books in Fiction: " + bTrack.getBooksInGenre("Fiction"));
+    }
+}

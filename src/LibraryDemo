@@ -1,0 +1,46 @@
+package components.booktracker;
+
+import components.booktracker.BookTracker;
+import components.booktracker.BookTracker1L;
+
+/**
+ * Second program using BookTracker as the main data structure for tracking user's books.
+ *
+ * @author Shaili Sinha
+ */
+public class LibraryDemo {
+
+    /**
+     * Private constructor.
+     */
+    private LibraryDemo() {
+    }
+
+    /**
+     * Demonstrates basic use of BookTracker.
+     */
+    public static void main(String[] args) {
+
+        BookTracker library = new BookTracker1L();
+
+        System.out.println("=== Library Demo ===");
+
+        library.addBook("Dune", "Sci-Fi", "Frank Herbert");
+        library.addBook("The Hobbit", "Fantasy", "J.R.R. Tolkien");
+        library.addBook("1984", "Dystopian", "George Orwell");
+
+        System.out.println("Size: " + library.size());
+        System.out.println("Has book 'Dune'? " + library.hasBook("Dune"));
+        System.out.println("Has genre 'Fantasy'? " + library.hasGenre("Fantasy"));
+        System.out.println("Has author 'George Orwell'? " + library.hasAuthor("George Orwell"));
+
+        System.out.println("Status of 1984: " + library.bookStatus("1984"));
+        library.markRead("1984");
+        System.out.println("Status of 1984 after reading: " + library.bookStatus("1984"));
+
+        library.removeBook("Dune");
+        System.out.println("Size after removing Dune: " + library.size());
+
+        System.out.println("=== End of Demo ===");
+    }
+}

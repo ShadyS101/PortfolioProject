@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Shaili Sinha
+- **Dot Number**: sinha.303
+- **Due Date**: 12/10 @ 11:59 PM EST
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I believe this has helped me understand software development much better. I hadn't realized that there were so many levels to coding, such as the kernel implementation, interfaces, etc. There is also, of course, the test and use cases too. All of these combine together and make the whole component actually work. Usually, in class, we have to complete a project in a couple of methods. But I believe this project took me through the whole process of a real-world project and not a school project, and I'm grateful to have done this.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+There were several gaps that I mentioned before. First, there was the fact that I didn't know the layers to software development. I learned more about kernel implementations and interfaces in the class and project. Another gap was how to actually code these implementations and interfaces. I only usually knew how to make a method, but I had no clue how to make an interface. So, in this way, it was a learning experience for me. Lastly, an additional gap was learning about Github. I only had a brief understanding of the application, but this project helped me understand how pull requests work and how GitHub can be helpful to store and organize code.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+My perspective of software development has changed quite a lot. In the beginning of the semester, I thought a project was only a file or two full of methods. But now, I realize that there are many layers to creating a component. It is something I still enjoy, though it can be tiring to actually have to work through the whole thing. But I do believe it helps to have the project split up over the semester to better manage your time.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +322,34 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Some skills I have picked up in this process are organization, writing software documentation, time management, and being able to explain your code. This was also a little earlier on, but actually being able to draw out your component with the interfaces and classes is also a good skill to have. Lastly, another important skill was being able to work on GitHub and VScode applications, and specifically troubleshoot any issues you run into, which is something I definitely had to do this semester.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Organization
+- Time management
+- Creativity (coming up with the component idea)
+- Technical Writing Skills
+- Github
+- VSCode
+- Code Documentation and Explanation
+- Comprehensive Communicator
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+In terms of career trajectory, I have mixed opinions about it. I enjoyed creating the methods and the idea itself, but I think I didn't really like making the abstract class. I often think of myself as pretty creative, so it makes sense to me that I would like to make the proof of concept. I also did like the topic I picked, but doing this project has made me realize what parts of the component I liked making. Overall, though, I think every part was important, as it has made me more experienced and aware of my interests for the future.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+Some things I could do to continue on my career trajectory are to continue developing personal projects, take part in hackathons, and take classes I am interested in. For personal projects, I want to make things related to my interests in gaming and reading, so perhaps I can take my booktracker component to another level in the future. There are also a lot of hackathons at OSU, so I will be sure to try to attend them when I can. Lastly, OSU offers a lot of different classes based on specializations, and while I am still here, I want to take as many classes as I can so I can continue to expand what I know. I know there are some classes related to gaming, and I want to take some machine learning classes too. And overall, some mentors I could contact to stay on my path are some of the CS professors here. So far, the ones I have had have been great and knowledgeable, and in the future, I hope I can join some communities to gain some new mentors.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -363,16 +364,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.12.10
 
 ### Added
 
-- Designed test suite for <!-- insert name of component here --> component
-- Designed two different use cases for <!-- insert name of component here --> component
+- Designed test suite for BookTracker component
+- Designed two different use cases for BookTracker component
 
 ### Updated
 
-- Changed design to include ...
+- Changed design to include test cases for JUnit
+- Changed design to include use cases in src
+- Updated part 6 in doc and added to reflection questions
 
 ```
 
@@ -383,8 +386,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -435,7 +436,5 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
